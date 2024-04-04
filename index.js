@@ -83,6 +83,9 @@ app.get('/api/formdata', async (req, res) => {
   }
 });
 
+app.get('/', (req, res) => {
+  res.send('Welcome to our website!');
+});
 
 // Start the server
 app.listen(PORT, () => {
